@@ -11,8 +11,8 @@
     </div><br>
     <div class="main">
         <p>
-        You are using 
-        <?php 
+        You are using
+        <?php
         if (strstr($_SERVER['REMOTE_ADDR'], '.')) {
             echo "<span class='red'>IPV4 ! </span><br>";
             $arr= preg_split('/:/', $_SERVER['REMOTE_ADDR'], -1);
@@ -22,7 +22,7 @@
             echo "<span class='green'>IPV6 !</span> <br>";
             echo "Your IPv6 Address is: <b>" . $_SERVER['REMOTE_ADDR']. '</b>';
             }
-        ?> 
+        ?>
         </p>
         <p>
             Learn more about IPv6 at <a href="http://en.wikipedia.org/wiki/IPv6" target="_blank">Wikipedia</a>
@@ -45,8 +45,10 @@
         </p>
         </div>
         <div class='footer'>
-            Made by <a href="http://www.koptein.de">Christian Koptein</a>  
+            Made by <a href="http://www.koptein.de">Christian Koptein</a>
         </div>
+<!--
+## NO TRACKING
 <script type="text/javascript">
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.whatsmyipv6.org/" : "http://piwik.whatsmyipv6.org/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
@@ -57,6 +59,7 @@ try {
     piwikTracker.enableLinkTracking();
 } catch( err ) {}
 </script><noscript><p><img src="http://piwik.whatsmyipv6.org/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+-->
      </body>
 </html>
 
